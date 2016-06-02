@@ -1,0 +1,27 @@
+<script src="js/popup.js"></script>
+<link rel="stylesheet" type="text/css" href="css/popup.css">
+<h2>PopUp Example</h2>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	<p class="text"></p>
+	Email: <input type="email" name="email">
+	<input type="submit" name="submit">
+  </div>
+</div>
+<script>
+	// Change the dialog box text value here. For example P$('TEST');
+	var dialogBox = P$();
+	//dialogBox.setDelay(5000);
+	dialogBox.setNumberOfPages(3);
+	// When the user clicks anywhere outside of the modal, close it
+	var modal = document.getElementById('myModal');
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
+</body>
